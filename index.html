@@ -21,7 +21,8 @@
 
         nav {
             display: flex;
-            justify-content: space-around;
+            flex-wrap: wrap;
+            justify-content: center;
             background-color: #ddd;
             padding: 1em;
         }
@@ -31,10 +32,12 @@
             color: #333;
             font-weight: bold;
             font-size: 1.2em;
+            margin: 0.5em;
         }
 
         section {
             padding: 2em;
+            text-align: center;
         }
 
         footer {
@@ -42,9 +45,13 @@
             color: #fff;
             text-align: center;
             padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 1em;
+                margin: 0.3em;
+            }
         }
     </style>
 </head>
